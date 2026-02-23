@@ -1,0 +1,40 @@
+dataset:
+  root: "./sample_data"
+  max_events: 50
+  min_nodes: 2
+
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+    random_state: 42
+  gradient_boosting:
+    n_estimators: 100
+    max_depth: 5
+    learning_rate: 0.1
+    random_state: 42
+
+evaluation:
+  random_state: 42
+  train_test_split: 0.8
+  n_folds: 5
+  n_bootstrap: 100
+  ci_alpha: 0.05
+
+casdi:
+  enabled: true
+  alpha: 0.30
+  beta: 0.20
+  gamma: 0.20
+  delta: 0.15
+  epsilon: 0.15
+
+output:
+  root: "./outputs"
+  save_features: true
+  save_plots: true
+  log_level: "INFO"

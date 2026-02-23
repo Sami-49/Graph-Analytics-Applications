@@ -1,0 +1,3 @@
+dataset,total_events,parsed_events,skipped_events,skip_reason_counts,label_counts(fake/real)
+twitter15,1490,1490,0,"{""parse_error"": 0, ""too_small"": 0}","{""fake"": 1116, ""real"": 374}"
+twitter16,818,818,0,"{""parse_error"": 0, ""too_small"": 0}","{""fake"": 613, ""real"": 205}"

@@ -1,0 +1,16 @@
+2026-02-22 20:51:00,460 - INFO - ================================================================================
+2026-02-22 20:51:00,461 - INFO - GRAPH-BASED FAKE NEWS DETECTION PIPELINE
+2026-02-22 20:51:00,461 - INFO - ================================================================================
+2026-02-22 20:51:00,463 - INFO - 
+[STAGE] diagnose_data ...
+2026-02-22 20:51:00,971 - INFO - [STAGE] diagnose_data done in 0.51s
+2026-02-22 20:51:00,971 - INFO - 
+[STAGE] build_graphs ...
+2026-02-22 20:51:09,946 - INFO - [STAGE] build_graphs done in 8.98s
+2026-02-22 20:51:09,948 - INFO - 
+[STAGE] compute_features_and_scores ...
+2026-02-22 20:55:11,432 - INFO - [STAGE] compute_features_and_scores done in 241.48s
+2026-02-22 20:55:11,436 - INFO - 
+[STAGE] build_curated_outputs ...
+2026-02-22 20:56:04,871 - WARNING - AUC≈0.5 but F1 is high: check AUC input (hard-label bug), class imbalance, or thresholding.
+2026-02-22 20:59:42,214 - INFO - [STAGE] build_curated_outputs done in 270.78s

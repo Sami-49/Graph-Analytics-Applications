@@ -1,0 +1,40 @@
+dataset:
+  root: "C:\\Users\\SAMI YOUSSEF\\OneDrive\\Desktop\\Graph Analytics & Applications\\Twitter15_16_dataset"
+  max_events: null
+  min_nodes: 2
+
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+    random_state: 42
+  gradient_boosting:
+    n_estimators: 100
+    max_depth: 5
+    learning_rate: 0.1
+    random_state: 42
+
+evaluation:
+  random_state: 42
+  train_test_split: 0.8
+  n_folds: 5
+  n_bootstrap: 1000
+  ci_alpha: 0.05
+
+casdi:
+  enabled: true
+  alpha: 0.30     # Spectral radius
+  beta: 0.20      # Core density
+  gamma: 0.20     # Bridging ratio
+  delta: 0.15     # Centralization
+  epsilon: 0.15   # Virality
+
+output:
+  root: "./outputs"
+  save_features: true
+  save_plots: true
+  log_level: "INFO"

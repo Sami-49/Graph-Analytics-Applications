@@ -1,0 +1,154 @@
+{
+  "artifacts": {
+    "figures": [
+      "figures/fig_casdi_ablation_v1.png",
+      "figures/fig_casdi_ablation_v2.png",
+      "figures/fig_corr_heatmap.png",
+      "figures/fig_cross_dataset.png",
+      "figures/fig_effect_size.png",
+      "figures/fig_feature_distributions.png",
+      "figures/fig_pipeline.png",
+      "figures/fig_pr_best.png",
+      "figures/fig_roc_best.png",
+      "figures/fig_univariate_auc.png"
+    ],
+    "logs": [
+      "logs/run.log"
+    ],
+    "other": [],
+    "reports": [
+      "reports/audit.md",
+      "reports/summary.md",
+      "reports/summary.pdf"
+    ],
+    "tables": [
+      "tables/casdi_comparison.csv",
+      "tables/dataset_summary.csv",
+      "tables/features_clean.csv",
+      "tables/generalization.csv",
+      "tables/univariate_scores.csv"
+    ]
+  },
+  "auc_flips": {
+    "twitter15": {
+      "casdi_score": false,
+      "casdi_v2_score": false,
+      "centralization_score": false,
+      "community_score": false,
+      "hps_score": true,
+      "kcore_score": false,
+      "spectral_score": true,
+      "virality_score": false
+    },
+    "twitter16": {
+      "casdi_score": false,
+      "casdi_v2_score": false,
+      "centralization_score": false,
+      "community_score": true,
+      "hps_score": true,
+      "kcore_score": false,
+      "spectral_score": true,
+      "virality_score": false
+    }
+  },
+  "best": {
+    "AUC": 0.6442843999769996,
+    "F1": 0.8438851749901691,
+    "bootstrap_CI_AUC_high": 0.674353380714563,
+    "bootstrap_CI_AUC_low": 0.6148847895347005,
+    "bootstrap_CI_F1_high": 0.0,
+    "bootstrap_CI_F1_low": 0.0,
+    "classifier": "score_only",
+    "dataset": "twitter15",
+    "feature_set": "casdi_v2_score"
+  },
+  "dataset_root": "C:\\Users\\SAMI YOUSSEF\\OneDrive\\Desktop\\Graph Analytics & Applications\\Twitter15_16_dataset",
+  "environment": {
+    "installed_versions": {
+      "matplotlib": "3.8.0",
+      "networkx": "3.1",
+      "numpy": "1.24.3",
+      "pandas": "2.0.3",
+      "pypdf": "6.4.0",
+      "python-louvain": "0.16",
+      "pyyaml": "6.0",
+      "scikit-learn": "1.3.1",
+      "scipy": "1.11.2",
+      "seaborn": "0.13.0",
+      "tqdm": "4.66.1",
+      "xgboost": "2.0.2"
+    },
+    "platform": "win32",
+    "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "requirements": [
+      "numpy==1.24.3",
+      "scipy==1.11.2",
+      "scikit-learn==1.3.1",
+      "networkx==3.1",
+      "pandas==2.0.3",
+      "matplotlib==3.8.0",
+      "seaborn==0.13.0",
+      "python-louvain==0.16",
+      "xgboost==2.0.2",
+      "pyyaml==6.0",
+      "tqdm==4.66.1"
+    ]
+  },
+  "events_parsed": {
+    "twitter15": 1490,
+    "twitter16": 818
+  },
+  "git_hash": "01fb08941705",
+  "hashes": {
+    "tables/casdi_comparison.csv": "faf539386d4f9214fe3ae255316c9796885b9ee9fbf36484d807314d035e5b24",
+    "tables/dataset_summary.csv": "e6667813ab6e2bfbc6b8a6eff16bd21c3309de84998d58121237868263a65f25",
+    "tables/features_clean.csv": "08536a3c3ad9bdb19ed26a8c3b0b2a51ab69915f1a8628ad129f731bbf9faddb",
+    "tables/generalization.csv": "9b5396159a81386c2c1b3d652d28a35fc2f5f4655e69878cd20fb63d264d947c",
+    "tables/univariate_scores.csv": "300089cabf0692253ce6b784080c1086d47239a933db2a0758f40b0e84de393b"
+  },
+  "metric_warnings": [
+    {
+      "auc": 0.5117295985357896,
+      "context": "score_only:twitter16:community_score",
+      "f1": 0.842180774748924,
+      "warning": "AUC≈0.5 but F1 is high: check AUC input (hard-label bug), class imbalance, or thresholding."
+    }
+  ],
+  "outputs_root": "outputs",
+  "parsing_summary": {
+    "twitter15": {
+      "n_events_index": 1490,
+      "n_parsed": 1490,
+      "n_skipped": 0,
+      "skipped": {
+        "parse_error": 0,
+        "too_small": 0
+      }
+    },
+    "twitter16": {
+      "n_events_index": 818,
+      "n_parsed": 818,
+      "n_skipped": 0,
+      "skipped": {
+        "parse_error": 0,
+        "too_small": 0
+      }
+    }
+  },
+  "qc_dropped_features": [],
+  "qc_warnings": [],
+  "random_seed": 42,
+  "run_id": "20260222_205100_1ed53b74",
+  "run_root": "outputs\\runs\\20260222_205100_1ed53b74",
+  "stage": "pro",
+  "stage_runtimes_seconds": {
+    "build_graphs": 8.975323915481567,
+    "compute_features_and_scores": 241.48369431495667,
+    "diagnose_data": 0.5081205368041992
+  },
+  "subsets": [
+    "twitter15",
+    "twitter16"
+  ],
+  "timestamp": "2026-02-22T20:59:42"
+}
